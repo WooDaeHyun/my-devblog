@@ -24,22 +24,22 @@ export function Footer() {
           <Link to="/">Latest Posts</Link>
           {config.facebook && (
             <a href={config.facebook} target="_blank" rel="noopener noreferrer">
-              Facebook
+              Github
             </a>
           )}
           {config.twitter && (
             <a href={config.twitter} target="_blank" rel="noopener noreferrer">
-              Twitter
+              tstory-blog
             </a>
           )}
 
-          <a
+          {/* <a
             href="https://github.com/scttcper/gatsby-casper"
             target="_blank"
             rel="noopener noreferrer"
           >
             Casper
-          </a>
+          </a> */}
 
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
