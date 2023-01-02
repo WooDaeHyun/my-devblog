@@ -26,13 +26,14 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
 
   return (
     <article
-      className={`post-card ${post.frontmatter.image ? '' : 'no-image'} ${isLarge ? 'post-card-large' : ''
-        }`}
+      className={`post-card ${post.frontmatter.image ? '' : 'no-image'} ${
+        isLarge ? 'post-card-large' : ''
+      }`}
       css={[PostCardStyles, isLarge && PostCardLarge]}
     >
       {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
-          <PostCardImage className="post-card-image">
+          {/* <PostCardImage className="post-card-image">
             {post.frontmatter?.image && (
               <GatsbyImage
                 image={getImage(post.frontmatter.image)!}
@@ -41,30 +42,35 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
                 loading={isLarge ? 'eager' : 'lazy'}
               />
             )}
-          </PostCardImage>
+          </PostCardImage> */}
         </Link>
       )}
       <PostCardContent className="post-card-content">
         <Link className="post-card-content-link" css={PostCardContentLink} to={post.fields.slug}>
           <PostCardHeader className="post-card-header">
-            {post.frontmatter.tags && config.showAllTags && (
-              <PostCardPrimaryTag className="post-card-primary-tag">
-                {post.frontmatter.tags.map((tag, idx) => (
-                  <React.Fragment key={tag}>
-                    {idx > 0 && <>, &nbsp;</>}
-                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                  </React.Fragment>
-                ))}
-              </PostCardPrimaryTag>
-            )}
-            {post.frontmatter.tags && !config.showAllTags && (
-              <PostCardPrimaryTag className="post-card-primary-tag">
-                <Link to={`/tags/${kebabCase(post.frontmatter.tags[0])}/`}>
-                  {post.frontmatter.tags[0]}
-                </Link>
-              </PostCardPrimaryTag>
-            )}
-            <PostCardTitle className="post-card-title">{post.frontmatter.title}</PostCardTitle>
+            <TaggedImagePrimaryTitleContainer>
+              <TaggedImageContainer />
+              <PrimaryTitleContainer>
+                {post.frontmatter.tags && config.showAllTags && (
+                  <PostCardPrimaryTag className="post-card-primary-tag">
+                    {post.frontmatter.tags.map((tag, idx) => (
+                      <React.Fragment key={tag}>
+                        {idx > 0 && <>, &nbsp;</>}
+                        <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      </React.Fragment>
+                    ))}
+                  </PostCardPrimaryTag>
+                )}
+                {post.frontmatter.tags && !config.showAllTags && (
+                  <PostCardPrimaryTag className="post-card-primary-tag">
+                    <Link to={`/tags/${kebabCase(post.frontmatter.tags[0])}/`}>
+                      {post.frontmatter.tags[0]}
+                    </Link>
+                  </PostCardPrimaryTag>
+                )}
+                <PostCardTitle className="post-card-title">{post.frontmatter.title}</PostCardTitle>
+              </PrimaryTitleContainer>
+            </TaggedImagePrimaryTitleContainer>
           </PostCardHeader>
           <PostCardExcerpt className="post-card-excerpt">
             <p>{post.frontmatter.excerpt || post.excerpt}</p>
@@ -181,6 +187,25 @@ const PostCardContentLink = css`
   }
 `;
 
+const TaggedImagePrimaryTitleContainer = styled.div`
+  display: flex;
+`;
+
+const PrimaryTitleContainer = styled.div`
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+`;
+
+const TaggedImageContainer = styled.div`
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-right: 10px;
+  background-color: black;
+`;
+
 const PostCardPrimaryTag = styled.div`
   margin: 0 0 0.2em;
   /* color: var(--blue); */
@@ -264,4 +289,3 @@ export const StaticAvatar = css`
     border-color: ${lighten('0.02', colors.darkgrey)};
   }
 `;
-

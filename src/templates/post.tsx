@@ -18,7 +18,7 @@ import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
-
+import CommentWidget from '../components/CommentWidget';
 
 type PageTemplateProps = {
   location: Location;
@@ -212,7 +212,7 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-
+              <CommentWidget />
             </article>
           </div>
         </main>

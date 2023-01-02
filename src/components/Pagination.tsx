@@ -69,9 +69,8 @@ const navCss = css`
     min-width: 50px;
 
     &.active {
-      -webkit-box-shadow: inset 3px 0px 0px 0px ${darken(0.05, colors.darkgrey)};
-      -moz-box-shadow: inset 3px 0px 0px 0px ${darken(0.05, colors.darkgrey)};
-      box-shadow: inset 3px 0px 0px 0px ${darken(0.05, colors.darkgrey)};
+      background-color: black;
+      color: white;
     }
 
     &:hover:not(.active) {
