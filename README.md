@@ -1,6 +1,6 @@
 # gatsby-casper
 
-Demo: https://gatsby-casper.netlify.app
+Demo: https://woodaelog.netlify.app/
 
 This is a static blog generator and starter gatsby repo. A port of [Casper](https://github.com/TryGhost/Casper) v3 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/).
 
@@ -79,7 +79,7 @@ Edit `gatsby-config.js` section `siteMetadata`
  siteMetadata: {
     title: 'My awesome site name',
     description: 'This is a description for my site',
-    siteUrl: 'https://mysite.com', // full path to blog - no ending slash
+    siteUrl: 'https://woodaelog.netlify.app/', // full path to blog - no ending slash
   },
 ```
 
@@ -87,4 +87,5 @@ Edit `gatsby-config.js` section `siteMetadata`
 
 In `gatsby-node.js`, edit the `postsPerPage` constant. The default value is
 six posts per page.
+
 # my-dev-blog-with-starter

@@ -55,11 +55,11 @@ export type WebsiteConfig = {
 
 const config: WebsiteConfig = {
   title: 'WooDaeHyun Blog',
-  description: 'WooDaeHyunDev-Blog',
+  description: 'WooDaeHyun Dev-Blog',
   coverImage: 'img/Reno.png',
   logo: 'img/ghost-logo.png',
   lang: 'kr',
-  siteUrl: 'http://www.google.com/',
+  siteUrl: 'https://woodaelog.netlify.app/',
   facebook: 'https://github.com/WooDaeHyun',
   twitter: 'https://pinetree93.tistory.com/',
   showSubscribe: true,
