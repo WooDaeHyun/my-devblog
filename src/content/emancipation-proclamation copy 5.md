@@ -1,7 +1,7 @@
 ---
 title: '리노 귀여웡 ㅇㅇ'
 author: [Another Author]
-tags: [Reno Pictures]
+tags: [lang]
 image: img/reno.png
 date: '1922-12-12T10:00:00.000Z'
 draft: false

@@ -17,6 +17,8 @@ export function Footer() {
           {config.footer && (
             <Link to="/">
               | {config.title} {config.footer}
+              <br />
+              thanks for visiting my blog!😊
             </Link>
           )}
         </section>
@@ -29,7 +31,7 @@ export function Footer() {
           )}
           {config.twitter && (
             <a href={config.twitter} target="_blank" rel="noopener noreferrer">
-              tstory-blog
+              tistory-blog
             </a>
           )}
 

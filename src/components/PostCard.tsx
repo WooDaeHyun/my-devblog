@@ -1,10 +1,8 @@
 import { format } from 'date-fns';
 import { Link } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { kebabCase } from 'lodash';
 import { lighten } from 'polished';
 import React from 'react';
-
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
@@ -12,9 +10,59 @@ import { colors } from '../styles/colors';
 import type { PageContext } from '../templates/post';
 import config from '../website-config';
 
+import logoTil from '../content/img/logo-til.png';
+import logoCs from '../content/img/logo-cs.png';
+import logoEtc from '../content/img/logo-etc.png';
+import logoLang from '../content/img/logo-lang.png';
+import logoRetro from '../content/img/logo-retro.png';
+
 export type PostCardProps = {
   post: PageContext;
   isLarge?: boolean;
+};
+
+enum TagType {
+  TIL = 'TIL',
+  CS = 'CS',
+  ETC = 'ETC',
+  LANG = 'LANG',
+  RETRO = 'RETRO',
+}
+
+const parseType = (tagName: string): TagType => {
+  const tagNameUpper = tagName ? tagName.toUpperCase() : '';
+
+  switch (tagNameUpper) {
+    case 'TIL':
+      return TagType.TIL;
+    case 'CS':
+      return TagType.CS;
+    case 'ETC':
+      return TagType.ETC;
+    case 'LANG':
+      return TagType.LANG;
+    case 'RETRO':
+      return TagType.RETRO;
+    default:
+      return TagType.ETC;
+  }
+};
+
+const getTagLogo = (tagName: string) => {
+  switch (parseType(tagName)) {
+    case TagType.TIL:
+      return logoTil;
+    case TagType.CS:
+      return logoCs;
+    case TagType.RETRO:
+      return logoRetro;
+    case TagType.LANG:
+      return logoLang;
+    case TagType.ETC:
+      return logoEtc;
+    default:
+      return logoEtc;
+  }
 };
 
 export function PostCard({ post, isLarge = false }: PostCardProps) {
@@ -31,25 +79,19 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
       }`}
       css={[PostCardStyles, isLarge && PostCardLarge]}
     >
-      {post.frontmatter.image && (
-        <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
-          {/* <PostCardImage className="post-card-image">
-            {post.frontmatter?.image && (
-              <GatsbyImage
-                image={getImage(post.frontmatter.image)!}
-                alt={`${post.frontmatter.title} cover image`}
-                style={{ height: '100%' }}
-                loading={isLarge ? 'eager' : 'lazy'}
-              />
-            )}
-          </PostCardImage> */}
-        </Link>
-      )}
       <PostCardContent className="post-card-content">
         <Link className="post-card-content-link" css={PostCardContentLink} to={post.fields.slug}>
           <PostCardHeader className="post-card-header">
             <TaggedImagePrimaryTitleContainer>
-              <TaggedImageContainer />
+              <TaggedImageContainer>
+                <Link
+                  className="post-card-image-link"
+                  css={PostCardImageLink}
+                  to={post.fields.slug}
+                >
+                  <img src={getTagLogo(post.frontmatter.tags[0])} alt={post.frontmatter.tags[0]} />
+                </Link>
+              </TaggedImageContainer>
               <PrimaryTitleContainer>
                 {post.frontmatter.tags && config.showAllTags && (
                   <PostCardPrimaryTag className="post-card-primary-tag">
@@ -64,7 +106,7 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
                 {post.frontmatter.tags && !config.showAllTags && (
                   <PostCardPrimaryTag className="post-card-primary-tag">
                     <Link to={`/tags/${kebabCase(post.frontmatter.tags[0])}/`}>
-                      {post.frontmatter.tags[0]}
+                      {post.frontmatter.tags[1]}
                     </Link>
                   </PostCardPrimaryTag>
                 )}
@@ -203,7 +245,12 @@ const TaggedImageContainer = styled.div`
   height: 50px;
   margin-top: 5px;
   margin-right: 10px;
-  background-color: black;
+  background-color: white;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const PostCardPrimaryTag = styled.div`

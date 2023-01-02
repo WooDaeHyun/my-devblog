@@ -61,9 +61,10 @@ function About() {
                     A starter template for Gatsby <br /> GitHub:{' '}
                     <a href="https://github.com/WooDaeHyun">My gitgub</a>
                   </h5>
+                  <p>안녕하세요 우대현 입니다!</p>
+                  <p>제 블로그를 방문해 주셔서 감사합니다!</p>
                   <p>컨텐츠 준비 중입니다!</p>
-                  <p>컨텐츠 준비 중입니다!</p>
-                  <p>컨텐츠 준비 중입니다!</p>
+                  <p>조금만 기다려 주세요!☺️</p>
                 </div>
               </PostFullContent>
             </article>
