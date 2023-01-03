@@ -1,8 +1,57 @@
 ---
-title: 'MVC Pattern'
+title: '데브코스 11주차 과제'
 author: [Another Author]
-tags: [TIL]
+tags: [TIL, Assignment]
 image: null
-date: '1922-12-12T10:00:00.000Z'
+date: '2023-01-03T18:23:27.000Z'
 draft: false
 ---
+
+# 데브코스 11주차 과제
+
+## React input formatter 만들기
+
+11주차 과제 input formatter 만들기는 input 창에 값이 입력되었을 때 원하는 형태로 input창이 자동으로 변경되도록 구현해야 하는 과제였다.
+
+예를 들면 숫자를 입력했을 때 `<u>핸드폰 번호, 숫자(3자리마다 , 찍기), 시간</u>`이 평소 우리가 사용하는 형식과 비슷하게 구현해 내면 되는 것이다.
+
+비교적 쉬운 과제였지만 컴포넌트 구성을 할 때 조금은 고민을 했다.
+**App에서 input의 onChange에 연결할 handler를 다 만들어서 porps로 넘겨 주어주는게 좋은지 아니면 각 컴포넌트 파일마다 따로 구성하는게 좋을지에 대한 고민이었다. **
+
+**결론은 각 컴포넌트 마다 핸들러를 따로 구성했다. **
+이렇게 결정한 이유는 ‘재사용성’측면을 고려하였다. 각 컴포넌트는 사용될 수 있는 곳이 다를 수 있기 때문에 별도로 만들었다.
+
+컴포넌트 구조는 다음과 같이 구성했다.
+
+![](&&&SFLOCALFILEPATH&&&%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-01-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.31.58.png)
+
+본 과제는 정규식을 사용하면 그렇게 어렵지 않게 사용할 수 있다. 다만 조건(?)을 생각하는 것이 조금 까다로울 수는 있다. 컴포넌트 소스 코드들이 다 비슷하기 때문에 대표적인 예로 하나 올려보려고 한다. 입력된 3자리의 숫자마다 콤마(,)를 찍게 만들어 주는 컴포넌트이다.
+
+```javascript
+import { useCallback, useState } from 'react';
+import { FormatterContainer, Header, Input } from '../style/formatterStyle';
+
+const NumeralFormatter = () => {
+  const [numbers, setNumbers] = useState('');
+  const onChangeNumbers = useCallback(e => {
+    const value = e.target.value.replace(/[^0-9]/g, '').replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+    setNumbers(value);
+  }, []);
+  return (
+    <FormatterContainer>
+      <Header>Numbers Style: thousand</Header>
+      <Input placeholder="Please enter numbers" value={numbers} onChange={onChangeNumbers} />
+    </FormatterContainer>
+  );
+};
+
+export default NumeralFormatter;
+```
+
+<a href='&&&SFLOCALFILEPATH&&&%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB%20%E1%84%80%E1%85%B5%E1%84%85%E1%85%A9%E1%86%A8%202023-01-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.22.12.mov'>화면 기록 2023-01-03 오후 5.22.12.mov</a>
+
+한 번도 input에 value가 입력될 때 원하는 데이터 형식에 맞게 입력될 수 있도록 변경해준다는 ~~생각은 못해봤는데~~(아마 많이 봤겠지만 너무 당연하게 생각해서 기억이 안 나는 것이겠지만) 이번 과제를 통해서 **’_이런 디테일까지 신경써주는 것이 진짜 좋은 UI를 제공하고 좋은 UX를 만들 수 있게되지 않을까’_** 하는 생각이 들었다.
+
+오늘 처음으로 마크다운으로 글을 작성하고 있는데.. ㅎ
+**드디어 만들어 낸 나만의 블로그의 첫 글이다!!!!! ㅎㅎㅎㅎㅎㅎㅎ**
+아직 마크다운 사용법이 익숙하지 않다..ㅎㅎ 앞으로 좀 익숙해지도록 노력해봐야겠다.

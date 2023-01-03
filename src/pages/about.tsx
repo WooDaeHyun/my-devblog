@@ -58,8 +58,7 @@ function About() {
               <PostFullContent className="post-full-content">
                 <div className="post-content">
                   <h5>
-                    A starter template for Gatsby <br /> GitHub:{' '}
-                    <a href="https://github.com/WooDaeHyun">My github</a>
+                    GitHub: <a href="https://github.com/WooDaeHyun">My github</a>
                   </h5>
                   <p>안녕하세요 우대현 입니다!</p>
                   <p>제 블로그를 방문해 주셔서 감사합니다!</p>
