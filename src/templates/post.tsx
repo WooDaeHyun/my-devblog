@@ -235,6 +235,7 @@ const PostTemplate = css`
     margin-top: 64px;
     background: #fff;
     padding-bottom: 4vw;
+    box-shadow: 1 1 1 1;
   }
 
   @media (prefers-color-scheme: dark) {
