@@ -1,7 +1,7 @@
 ---
 title: 'Var Let Const 차이점'
 author: [woodaehyun]
-tags: [lang]
+tags: [lang, javascript]
 image: null
 date: '2023-01-03T19:00:00.000Z'
 draft: false
