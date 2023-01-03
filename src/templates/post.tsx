@@ -434,11 +434,6 @@ export const query = graphql`
         date
         tags
         excerpt
-        image {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-          }
-        }
       }
     }
     relatedPosts: allMarkdownRemark(
