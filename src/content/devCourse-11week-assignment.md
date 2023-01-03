@@ -1,9 +1,9 @@
 ---
 title: '데브코스 11주차 과제'
 author: [woodaehyun]
-tags: [TIL, ASSIGNMENT]
+tags: [TIL, ASSIGNMENT, retro]
 image: null
-date: '2023-01-02T18:00:00.000Z'
+date: '2023-01-03T00:00:00.000Z'
 draft: false
 ---
 
@@ -23,7 +23,7 @@ draft: false
 
 컴포넌트 구조는 다음과 같이 구성했다.
 
-![](&&&SFLOCALFILEPATH&&&%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-01-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.31.58.png)
+![컴포넌트구조](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUiMPz%2FbtrVftGVZkI%2Fqy62ujxdMfCZboWRkRTg0k%2Fimg.png '컴포넌트구조')
 
 본 과제는 정규식을 사용하면 그렇게 어렵지 않게 사용할 수 있다. 다만 조건(?)을 생각하는 것이 조금 까다로울 수는 있다. 컴포넌트 소스 코드들이 다 비슷하기 때문에 대표적인 예로 하나 올려보려고 한다. 입력된 3자리의 숫자마다 콤마(,)를 찍게 만들어 주는 컴포넌트이다.
 
@@ -48,7 +48,7 @@ const NumeralFormatter = () => {
 export default NumeralFormatter;
 ```
 
-![](&&&SFLOCALFILEPATH&&&%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202023-01-03%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.02.12.png)
+![과제 결과](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FNKbdy%2FbtrVjidPso6%2FjKbcTPDu3tNTonYzihgb41%2Fimg.png '과제 결과')
 
 한 번도 input에 value가 입력될 때 원하는 데이터 형식에 맞게 입력될 수 있도록 변경해준다는 ~~생각은 못해봤는데~~(아마 많이 봤겠지만 너무 당연하게 생각해서 기억이 안 나는 것이겠지만) 이번 과제를 통해서 **’_이런 디테일까지 신경써주는 것이 진짜 좋은 UI를 제공하고 좋은 UX를 만들 수 있게되지 않을까’_** 하는 생각이 들었다.
 
