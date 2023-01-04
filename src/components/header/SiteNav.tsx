@@ -86,7 +86,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
               </li>
               <li role="menuitem">
                 <Link to="/about" activeClassName="nav-current">
-                  About Me
+                  About-Me
                 </Link>
               </li>
               <li role="menuitem">
@@ -100,18 +100,33 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 </Link>
               </li>
               <li role="menuitem">
+                <Link to="/tags/retro/" activeClassName="nav-current">
+                  회고
+                </Link>
+              </li>
+              <li role="menuitem">
                 <Link to="/tags/lang/" activeClassName="nav-current">
-                  Programming Language
+                  Language
+                </Link>
+              </li>
+              <li role="menuitem">
+                <Link to="/tags/javascript/" activeClassName="nav-current">
+                  Javascript
+                </Link>
+              </li>
+              <li role="menuitem">
+                <Link to="/tags/react/" activeClassName="nav-current">
+                  React
+                </Link>
+              </li>
+              <li role="menuitem">
+                <Link to="/tags/typescript/" activeClassName="nav-current">
+                  Typescript
                 </Link>
               </li>
               <li role="menuitem">
                 <Link to="/tags/cs/" activeClassName="nav-current">
                   CS
-                </Link>
-              </li>
-              <li role="menuitem">
-                <Link to="/tags/retro/" activeClassName="nav-current">
-                  회고
                 </Link>
               </li>
             </ul>
