@@ -5,6 +5,7 @@ tags: [TIL, ASSIGNMENT, retro, react]
 image: null
 date: '2023-01-03T00:00:00.000Z'
 draft: false
+excerpt: 11주차 과제 input formatter 만들기는 input 창에 값이 입력되었을 때 원하는 형태로 input창이 자동으로 변경되도록 구현해야 하는 과제였다. 비교적 쉬운 과제였지만 조금은 고민을 했다.
 ---
 
 # 데브코스 11주차 과제
