@@ -70,7 +70,7 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
   // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
   // 20 AUG 2018
-  const displayDatetime = format(date, 'dd LLL yyyy');
+  const displayDatetime = format(date, 'yyyy LLL dd');
 
   return (
     <article
@@ -121,8 +121,8 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
         <PostCardMeta className="post-card-meta">
           <PostCardBylineContent className="post-card-byline-content">
             <span className="post-card-byline-date">
-              <time dateTime={datetime}>{displayDatetime}</time>{' '}
-              <span className="bull">&bull;</span> {post.fields.readingTime.text}
+              <time dateTime={datetime}>{displayDatetime}</time>
+              {/* <span className="bull">&bull;</span> */}
             </span>
           </PostCardBylineContent>
         </PostCardMeta>
@@ -137,10 +137,11 @@ const PostCardStyles = css`
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   padding: 0 20px 40px;
   min-height: 220px;
   background-size: cover;
+  border-bottom: solid 1px lightgrey;
 `;
 
 const PostCardLarge = css`
