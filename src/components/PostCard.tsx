@@ -15,6 +15,7 @@ import logoCs from '../content/img/logo-cs.png';
 import logoEtc from '../content/img/logo-etc.png';
 import logoLang from '../content/img/logo-lang.png';
 import logoRetro from '../content/img/logo-retro.png';
+import logoProject from '../content/img/logo-project.png';
 
 export type PostCardProps = {
   post: PageContext;
@@ -27,6 +28,7 @@ enum TagType {
   ETC = 'ETC',
   LANG = 'LANG',
   RETRO = 'RETRO',
+  PROJECT = 'PROJECT',
 }
 
 const parseType = (tagName: string): TagType => {
@@ -43,6 +45,8 @@ const parseType = (tagName: string): TagType => {
       return TagType.LANG;
     case 'RETRO':
       return TagType.RETRO;
+    case 'PROJECT':
+      return TagType.PROJECT;
     default:
       return TagType.ETC;
   }
@@ -60,6 +64,8 @@ const getTagLogo = (tagName: string) => {
       return logoLang;
     case TagType.ETC:
       return logoEtc;
+    case TagType.PROJECT:
+      return logoProject;
     default:
       return logoEtc;
   }

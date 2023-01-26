@@ -1,7 +1,7 @@
 ---
 title: '데브코스 11주차 과제'
 author: [woodaehyun]
-tags: [TIL, ASSIGNMENT, retro, react]
+tags: [retro, TIL, ASSIGNMENT, react]
 image: null
 date: '2023-01-03T00:00:00.000Z'
 draft: false

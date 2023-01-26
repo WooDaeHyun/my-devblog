@@ -42,7 +42,7 @@ function NotFoundPage(props: NotFoundTemplateProps) {
               <ErrorCode>404</ErrorCode>
               <ErrorDescription>Page not found</ErrorDescription>
               <Link css={ErrorLink} to="/">
-                Go to the front page →
+                메인 페이지로 이동해 주세요 👉🏼
               </Link>
             </section>
 

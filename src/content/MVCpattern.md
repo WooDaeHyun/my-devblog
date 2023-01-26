@@ -1,7 +1,7 @@
 ---
 title: 'MVC패턴'
 author: [woodaehyun]
-tags: [cs]
+tags: [cs, til]
 image: null
 date: '2023-01-03T01:00:00.000Z'
 draft: false

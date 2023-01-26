@@ -1,7 +1,7 @@
 ---
 title: 'react 라이프 사이클'
 author: [woodaehyun]
-tags: [TIL, lang, react]
+tags: [lang, til, react]
 image: null
 date: '2023-01-03T23:23:00.000Z'
 draft: false
