@@ -94,7 +94,7 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
   // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
   // 20 AUG 2018
-  const displayDatetime = format(date, 'dd LLL yyyy');
+  const displayDatetime = format(date, 'yyyy LLL dd');
 
   return (
     <IndexLayout className="post-template">
@@ -192,10 +192,7 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
                         <time className="byline-meta-date" dateTime={datetime}>
                           {displayDatetime}
                         </time>
-                        <span className="byline-reading-time">
-                          <span className="bull">&bull;</span>
-                          {post.fields.readingTime.text}
-                        </span>
+                        <span className="byline-reading-time" />
                       </div>
                     </section>
                   </section>
