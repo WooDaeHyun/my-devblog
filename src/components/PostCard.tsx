@@ -129,7 +129,7 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
             <span className="post-card-byline-date">
               <time dateTime={datetime}>{displayDatetime}</time>
               <span className="byline-reading-time">
-                <span className="bull" />
+                <span className="bull">&bull;</span>
               </span>
             </span>
           </PostCardBylineContent>
@@ -141,7 +141,7 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
 
 const PostCardStyles = css`
   position: relative;
-  flex: 1 1 301px;
+  flex: 1 1 320px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
