@@ -192,6 +192,9 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
                         <time className="byline-meta-date" dateTime={datetime}>
                           {displayDatetime}
                         </time>
+                        <span className="byline-reading-time">
+                          <span className="bull" />
+                        </span>
                         <span className="byline-reading-time" />
                       </div>
                     </section>
