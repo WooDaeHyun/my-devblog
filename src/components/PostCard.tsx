@@ -129,7 +129,7 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
             <span className="post-card-byline-date">
               <time dateTime={datetime}>{displayDatetime}</time>
               <span className="byline-reading-time">
-                <span className="bull">&bull;</span>
+                <span className="bull" />
               </span>
             </span>
           </PostCardBylineContent>
