@@ -1017,13 +1017,6 @@
   dependencies:
     regenerator-runtime "^0.13.10"
 
-"@babel/runtime@^7.20.7":
-  version "7.20.13"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.13.tgz#7055ab8a7cff2b8f6058bf6ae45ff84ad2aded4b"
-  integrity sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==
-  dependencies:
-    regenerator-runtime "^0.13.11"
-
 "@babel/template@^7.16.7", "@babel/template@^7.18.10":
   version "7.18.10"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.18.10.tgz"
@@ -5635,15 +5628,15 @@ gatsby-plugin-sharp@5.0.0:
     sharp "^0.30.7"
     svgo "^2.8.0"
 
-gatsby-plugin-sitemap@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-6.5.0.tgz#c380917691f03a7361c1b23f21cf48ef13ed72f4"
-  integrity sha512-Rgh3V6Gc0HrSGw0jcqrtQZ+SCUqjorfM5/S5kxe6e3QloR2mYLnrPZdZhqyPhDmRy7+BUg0pAgKlN8DW0tUm3g==
+gatsby-plugin-sitemap@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-6.0.0.tgz#0371e85c50a9f61e67f7c78efe6d60ed01bf33b0"
+  integrity sha512-LKWs8jTERpl1FY61ds7j4kNE2ZNbCE5iYLuW6dRW8g0EDr4ki+wvMpR6/03fuoGuhaojecSl3gmQc7Uwjt96/g==
   dependencies:
-    "@babel/runtime" "^7.20.7"
+    "@babel/runtime" "^7.15.4"
     common-tags "^1.8.2"
     minimatch "^3.1.2"
-    sitemap "^7.1.1"
+    sitemap "^7.0.0"
 
 gatsby-plugin-typescript@5.0.0, gatsby-plugin-typescript@^5.0.0:
   version "5.0.0"
@@ -9218,11 +9211,6 @@ regenerator-runtime@^0.13.10, regenerator-runtime@^0.13.7:
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz"
   integrity sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==
 
-regenerator-runtime@^0.13.11:
-  version "0.13.11"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
-  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
-
 regenerator-transform@^0.15.0:
   version "0.15.0"
   resolved "https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.15.0.tgz"
@@ -9819,7 +9807,7 @@ sisteransi@^1.0.5:
   resolved "https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 
-sitemap@^7.1.1:
+sitemap@^7.0.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-7.1.1.tgz#eeed9ad6d95499161a3eadc60f8c6dce4bea2bef"
   integrity sha512-mK3aFtjz4VdJN0igpIJrinf3EO8U8mxOPsTBzSsy06UtjZQJ3YY3o3Xa7zSc5nMqcMrRwlChHZ18Kxg0caiPBg==
