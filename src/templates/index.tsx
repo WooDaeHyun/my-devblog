@@ -106,16 +106,14 @@ function IndexPage(props: IndexProps) {
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={[inner, Posts]}>
             <div css={[PostFeed]}>
-              {props.data.allMarkdownRemark.edges
-                .map(
-                  (post, index) =>
-                    // filter out drafts in production
-                    (post.node.frontmatter.draft !== true ||
-                      process.env.NODE_ENV !== 'production') && (
-                      <PostCard key={post.node.fields.slug} post={post.node} isLarge={false} />
-                    ),
-                )
-                .reverse()}
+              {props.data.allMarkdownRemark.edges.map(
+                (post, index) =>
+                  // filter out drafts in production
+                  (post.node.frontmatter.draft !== true ||
+                    process.env.NODE_ENV !== 'production') && (
+                    <PostCard key={post.node.fields.slug} post={post.node} isLarge={false} />
+                  ),
+              )}
             </div>
           </div>
         </main>
@@ -145,7 +143,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { frontmatter: { date: ASC } }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { draft: { ne: true } } }
       limit: $limit
       skip: $skip
