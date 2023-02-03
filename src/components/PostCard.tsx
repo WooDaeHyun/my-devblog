@@ -151,6 +151,10 @@ const PostCardStyles = css`
   min-height: 220px;
   background-size: cover;
   border-bottom: solid 1px lightgrey;
+
+  @media (max-width: 1030px) {
+    max-width: none;
+  }
 `;
 
 const PostCardLarge = css`
