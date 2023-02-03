@@ -439,7 +439,7 @@ export const query = graphql`
     relatedPosts: allMarkdownRemark(
       filter: { frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } } }
       limit: 5
-      sort: { frontmatter: { date: ASC } }
+      sort: { frontmatter: { date: DESC } }
     ) {
       totalCount
       edges {

@@ -142,6 +142,7 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
 const PostCardStyles = css`
   position: relative;
   flex: 1 1 320px;
+  max-width: 370px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
