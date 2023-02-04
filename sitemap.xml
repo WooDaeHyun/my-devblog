@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://woodaelog.com/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/about/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/project/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/til/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/retro/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/lang/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/javascript/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/react/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/cs/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/18.myungsung-project-personal-retro(2)/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/myungsung/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/17.myungsung-project-personal-retro(1)/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/16.til-function/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/15.til-raw%20value-vs-object/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/10.til-data-visualization/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/etc/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/14.til-typechange/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/13.til-data-type/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/12.til-expression%20sentence/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/11.til-variable/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/2/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/3/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/08.unsungheroprojectretro/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/unsung-hero/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/00.dev-blog-project/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/makedevblog/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/09.til-deepdive-history/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/07.til-data-visualization/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/06.til-data-visualization/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/05.%20reactcomponentlifecycle/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/04.%20three-conditon-vs-filter/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/02.%20mvcpattern/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/01.%20devcourse-11week-assignment/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/tags/assignment/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/03.%20varletconst/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://woodaelog.com/welcome/</loc>
+  <lastmod>2023-02-04T18:27:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
