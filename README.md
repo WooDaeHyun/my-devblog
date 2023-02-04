@@ -1,4 +1,4 @@
-# gatsby-casper
+<!-- # gatsby-casper
 
 Demo: https://woodaelog.com/
 
@@ -81,11 +81,8 @@ Edit `gatsby-config.js` section `siteMetadata`
     description: 'This is a description for my site',
     siteUrl: 'https://woodaelog.com/', // full path to blog - no ending slash
   },
-```
+``` -->
 
-## How to adjust pagination
+# 본 repo는 gatsby starter를 통해 커스터마이징한 저만의 블로그 입니다!
 
-In `gatsby-node.js`, edit the `postsPerPage` constant. The default value is
-six posts per page.
-
-# my-dev-blog-with-starter
+woodaelog.com

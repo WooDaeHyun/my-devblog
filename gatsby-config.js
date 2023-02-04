@@ -3,9 +3,9 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Casper',
-    description: 'A port of the casper blog built for gatsby',
-    siteUrl: 'https://woodaelog.netlify.app/', // full path to blog - no ending slash
+    title: 'woodaelog',
+    description: "it's my development blog to record",
+    siteUrl: 'https://woodaelog.app', // full path to blog - no ending slash
   },
   // mapping: {
   //   'MarkdownRemark.frontmatter.author': 'AuthorYaml.name',
