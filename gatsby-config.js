@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'woodaelog',
     description: "it's my development blog to record",
-    siteUrl: 'https://woodaelog.app', // full path to blog - no ending slash
+    siteUrl: 'https://woodaelog.com', // full path to blog - no ending slash
   },
   // mapping: {
   //   'MarkdownRemark.frontmatter.author': 'AuthorYaml.name',
@@ -54,7 +54,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://woodaelog.netlify.app/',
+        siteUrl: 'https://woodaelog.com/',
       },
     },
     'gatsby-plugin-typescript',
