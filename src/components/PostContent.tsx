@@ -161,7 +161,8 @@ export const PostFullContent = styled.section`
 
   blockquote p {
     margin: 0 0 1em 0;
-    color: inherit;
+    color: black;
+    font-weight: 400;
     font-size: inherit;
     line-height: inherit;
     font-style: italic;
