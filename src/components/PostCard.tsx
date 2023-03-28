@@ -259,8 +259,6 @@ const TaggedImageContainer = styled.div`
   height: 50px;
   margin-top: 5px;
   margin-right: 10px;
-  background-color: white;
-
   img {
     width: 100%;
     height: 100%;
