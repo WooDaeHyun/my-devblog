@@ -285,7 +285,8 @@ export const PostFullHeader = styled.header`
 
 const PostFullTags = styled.section`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  margin-bottom: 2rem;
   align-items: center;
   /* color: var(--midgrey); */
   color: ${colors.midgrey};
@@ -299,9 +300,8 @@ const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
-  font-size: 2.3rem;
-  line-height: 1.4em;
-  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 1.6em;
 
   @media (max-width: 500px) {
     font-size: 1.9rem;

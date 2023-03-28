@@ -33,7 +33,7 @@ export const PostFullContent = styled.section`
   padding: 0 170px 6vw;
   min-height: 230px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.6em;
   background: #fff;
 
@@ -96,25 +96,20 @@ export const PostFullContent = styled.section`
   }
 
   a {
-    /* color: var(--darkgrey); */
     color: ${colors.darkgrey};
     word-break: break-word;
-    /* box-shadow: var(--darkgrey) 0 -1px 0 inset; */
     box-shadow: ${colors.darkgrey} 0 -1px 0 inset;
     transition: all 0.2s ease-in-out;
   }
 
   a:hover {
-    /* color: var(--blue); */
     color: ${colors.blue};
     text-decoration: none;
-    /* box-shadow: var(--blue) 0 -1px 0 inset; */
     box-shadow: ${colors.blue} 0 -1px 0 inset;
   }
 
   strong,
   em {
-    /* color: color(var(--darkgrey) l(-5%)); */
     color: ${lighten('-0.05', colors.darkgrey)};
   }
 
@@ -176,12 +171,16 @@ export const PostFullContent = styled.section`
     margin-bottom: 0;
   }
 
+  blockquote h1 {
+    text-align: left;
+    font-size: 3.5rem;
+  }
+
   code {
     padding: 0 5px 2px;
     font-size: 0.8em;
     line-height: 1em;
     font-weight: 400 !important;
-    /* background: var(--whitegrey); */
     background: ${colors.whitegrey};
     border-radius: 3px;
   }
@@ -192,22 +191,15 @@ export const PostFullContent = styled.section`
 
   pre {
     overflow-x: auto;
-    /* margin: 1.5em 0 3em; */
     padding: 20px;
     max-width: 100%;
-    /* border: color(var(--darkgrey) l(-10%)) 1px solid; */
-    /* border: ${lighten('-0.1', colors.darkgrey)} 1px solid; */
-    /* color: var(--whitegrey); */
     color: ${colors.whitegrey};
     font-size: 1.4rem;
     line-height: 1.5em;
-    /* background: color(var(--darkgrey) l(-3%)); */
-    /* background: ${lighten('-0.03', colors.darkgrey)}; */
     border-radius: 5px;
   }
 
   pre ::selection {
-    /* color: color(var(--midgrey) l(-25%)); */
     color: ${lighten('-0.25', colors.midgrey)};
   }
 
@@ -239,7 +231,6 @@ export const PostFullContent = styled.section`
     margin-left: -10px;
     width: 1px;
     height: 30px;
-    /* background: color(var(--lightgrey) l(+10%)); */
     background: ${lighten('0.1', colors.lightgrey)};
     box-shadow: #fff 0 0 0 5px;
     transform: rotate(45deg);
@@ -255,7 +246,6 @@ export const PostFullContent = styled.section`
   h4,
   h5,
   h6 {
-    /* color: color(var(--darkgrey) l(-5%)); */
     color: ${lighten('-0.05', colors.darkgrey)};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
@@ -335,7 +325,6 @@ export const PostFullContent = styled.section`
     margin: 0.5em 0;
     padding: 0.4em 1em 0.9em;
     border: 0;
-    /* color: var(--blue); */
     color: ${colors.blue};
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
     font-size: 3.2rem;
@@ -345,7 +334,6 @@ export const PostFullContent = styled.section`
   @media (min-width: 1180px) {
     h5 {
       max-width: 1060px;
-      /* width: 100vw; */
     }
   }
   @media (max-width: 800px) {
@@ -417,26 +405,22 @@ export const PostFullContent = styled.section`
   }
 
   table th {
-    /* color: var(--darkgrey); */
     color: ${colors.darkgrey};
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.2px;
     text-align: left;
     text-transform: uppercase;
-    /* background-color: color(var(--whitegrey) l(+4%)); */
     background-color: ${lighten('0.04', colors.whitegrey)};
   }
 
   table th,
   table td {
     padding: 6px 12px;
-    /* border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid; */
     border: ${lighten('-0.01', colors.whitegrey)} 1px solid;
   }
 
   @media (prefers-color-scheme: dark) {
-    /* background: var(--darkmode); */
     background: ${colors.darkmode};
 
     h1,
@@ -481,32 +465,20 @@ export const PostFullContent = styled.section`
     }
 
     table td:first-of-type {
-      /* background-image: linear-gradient(
-        to right,
-        var(--darkmode) 50%,
-        color(var(--darkmode) a(0%)) 100%
-      ); */
       background-image: linear-gradient(to right, ${colors.darkmode} 50%, ${colors.darkmode} 100%);
     }
 
     table td:last-child {
-      /* background-image: linear-gradient(
-        to left,
-        var(--darkmode) 50%,
-        color(var(--darkmode) a(0%)) 100%
-      ); */
       background-image: linear-gradient(270deg, #191b1f 50%, rgba(25, 27, 31, 0));
     }
 
     table th {
       color: rgba(255, 255, 255, 0.85);
-      /* background-color: color(var(--darkmode) l(+8%)); */
       background-color: ${lighten('0.08', colors.darkmode)};
     }
 
     table th,
     table td {
-      /* border: color(var(--darkmode) l(+8%)) 1px solid; */
       border: ${lighten('0.08', colors.darkmode)} 1px solid;
     }
 
@@ -517,12 +489,10 @@ export const PostFullContent = styled.section`
     }
   }
 
-  /* Start Syntax Highlighting */
-  /* Taken from overreacted https://github.com/gaearon/overreacted.io/blob/942b41555f5e5ccbb5f93f6c26142cd90b314236/src/utils/global.css#L68 */
   code[class*='language-'],
   pre[class*='language-'] {
-    color: white;
-    background: none;
+    color: black;
+    background: whitesmoke;
     font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
     font-feature-settings: normal;
     text-align: left;
@@ -574,14 +544,14 @@ export const PostFullContent = styled.section`
   /* Inline code */
   *:not(pre) > code[class*='language-'] {
     border-radius: 0.3em;
-    background: rgb(1, 22, 39);
-    color: white;
+    background: whitesmoke;
+    color: red;
     padding: 0.15em 0.5em;
     white-space: normal;
   }
 
   .token.attr-name {
-    color: rgb(173, 219, 103);
+    color: green;
     font-style: italic;
   }
 
@@ -591,54 +561,54 @@ export const PostFullContent = styled.section`
 
   .token.string,
   .token.url {
-    color: rgb(173, 219, 103);
+    color: green;
   }
 
   .token.variable {
-    color: rgb(214, 222, 235);
+    color: blue;
   }
 
   .token.number {
-    color: rgb(247, 140, 108);
+    color: red;
   }
 
   .token.builtin,
   .token.char,
   .token.constant,
   .token.function {
-    color: rgb(130, 170, 255);
+    color: blue;
   }
 
   .token.punctuation {
-    color: rgb(199, 146, 234);
+    color: purple;
   }
 
   .token.selector,
   .token.doctype {
-    color: rgb(199, 146, 234);
+    color: purple;
     font-style: 'italic';
   }
 
   .token.class-name {
-    color: rgb(255, 203, 139);
+    color: orange;
   }
 
   .token.tag,
   .token.operator,
   .token.keyword {
-    color: #ffa7c4;
+    color: red;
   }
 
   .token.boolean {
-    color: rgb(255, 88, 116);
+    color: red;
   }
 
   .token.property {
-    color: rgb(128, 203, 196);
+    color: green;
   }
 
   .token.namespace {
-    color: rgb(178, 204, 214);
+    color: blue;
   }
 
   pre[data-line] {

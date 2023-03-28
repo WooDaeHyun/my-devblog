@@ -429,8 +429,9 @@ function IndexLayout(props: IndexProps) {
 
           h1 {
             margin: 0 0 0.5em 0;
-            font-size: 5.5rem;
-            font-weight: 600;
+            font-size: 3.5rem;
+            font-weight: 700;
+            text-align: center;
           }
           @media (max-width: 500px) {
             h1 {
