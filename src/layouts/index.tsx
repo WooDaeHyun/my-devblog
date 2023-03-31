@@ -127,6 +127,7 @@ function IndexLayout(props: IndexProps) {
           }
           img {
             max-width: 100%;
+            box-shadow: 1px 1px 5px 1px grey;
           }
           html {
             box-sizing: border-box;
