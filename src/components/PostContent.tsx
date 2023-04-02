@@ -122,6 +122,10 @@ export const PostFullContent = styled.section`
     box-shadow: 1px 1px 5px 1px grey;
   }
 
+  span.gatsby-resp-image-wrapper {
+    box-shadow: 1px 1px 5px 1px grey;
+  }
+
   video {
     display: block;
     margin: 1.5em auto;
