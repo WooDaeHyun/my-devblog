@@ -2,7 +2,7 @@
   <h1>WOODAELOG🚀</h1>
 </div>
 
-<img alt="woodaelog 메인페이지" src="/img/woodaelog-main.png">
+<img alt="woodaelog 메인페이지" src="/src/content/img/woodaelog-main.png">
 
 <br/>
 
