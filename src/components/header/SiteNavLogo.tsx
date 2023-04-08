@@ -1,13 +1,9 @@
-import { graphql, Link, useStaticQuery, StaticQuery } from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { css } from '@emotion/react';
 import { getSrc } from 'gatsby-plugin-image';
 
 import config from '../../website-config';
-
-type SiteNavLogoProps = {
-  logo?: any;
-};
 
 export function SiteNavLogo() {
   const data = useStaticQuery(graphql`
