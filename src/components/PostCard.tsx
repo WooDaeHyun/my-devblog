@@ -215,16 +215,16 @@ const PostCardImageLink = css`
   border-radius: 5px 5px 0 0;
 `;
 
-const PostCardImage = styled.div`
-  width: auto;
-  height: 200px;
-  background: ${colors.lightgrey} no-repeat center center;
-  background-size: cover;
+// const PostCardImage = styled.div`
+//   width: auto;
+//   height: 200px;
+//   background: ${colors.lightgrey} no-repeat center center;
+//   background-size: cover;
 
-  @media (prefers-color-scheme: dark) {
-    background: ${colors.darkmode};
-  }
-`;
+//   @media (prefers-color-scheme: dark) {
+//     background: ${colors.darkmode};
+//   }
+// `;
 
 const PostCardContent = styled.div`
   flex-grow: 1;
