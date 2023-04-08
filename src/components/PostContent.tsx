@@ -135,7 +135,7 @@ export const PostFullContent = styled.section`
   @media (max-width: 1040px) {
     img,
     video {
-      width: 100%;
+      /* width: 100%; */
     }
   }
 
