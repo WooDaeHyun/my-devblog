@@ -94,6 +94,8 @@ function IndexPage(props: IndexProps) {
                     style={{ maxHeight: '70px', height: '70px' }}
                     src={getSrc(props.data.logo)}
                     alt={config.title}
+                    width={70}
+                    height={70}
                   />
                 ) : (
                   config.title
