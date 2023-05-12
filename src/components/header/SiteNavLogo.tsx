@@ -10,7 +10,7 @@ export function SiteNavLogo() {
     query HeadingQuery {
       logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
         childImageSharp {
-          gatsbyImageData(quality: 100, width: 500, layout: FIXED)
+          gatsbyImageData(quality: 100, width: 500, layout: FIXED, formats: [AUTO, WEBP, AVIF])
         }
       }
     }

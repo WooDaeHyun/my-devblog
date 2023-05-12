@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import { kebabCase } from 'lodash';
 import { lighten } from 'polished';
 import React from 'react';
@@ -10,65 +10,11 @@ import { colors } from '../styles/colors';
 import type { PageContext } from '../templates/post';
 import config from '../website-config';
 
-import logoTil from '../content/img/logo-til.png';
-import logoCs from '../content/img/logo-cs.png';
-import logoEtc from '../content/img/logo-etc.png';
-import logoLang from '../content/img/logo-lang.png';
-import logoRetro from '../content/img/logo-retro.png';
-import logoProject from '../content/img/logo-project.png';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export type PostCardProps = {
   post: PageContext;
   isLarge?: boolean;
-};
-
-enum TagType {
-  TIL = 'TIL',
-  CS = 'CS',
-  ETC = 'ETC',
-  LANG = 'LANG',
-  RETRO = 'RETRO',
-  PROJECT = 'PROJECT',
-}
-
-const parseType = (tagName: string): TagType => {
-  const tagNameUpper = tagName ? tagName.toUpperCase() : '';
-
-  switch (tagNameUpper) {
-    case 'TIL':
-      return TagType.TIL;
-    case 'CS':
-      return TagType.CS;
-    case 'ETC':
-      return TagType.ETC;
-    case 'LANG':
-      return TagType.LANG;
-    case 'RETRO':
-      return TagType.RETRO;
-    case 'PROJECT':
-      return TagType.PROJECT;
-    default:
-      return TagType.ETC;
-  }
-};
-
-const getTagLogo = (tagName: string) => {
-  switch (parseType(tagName)) {
-    case TagType.TIL:
-      return logoTil;
-    case TagType.CS:
-      return logoCs;
-    case TagType.RETRO:
-      return logoRetro;
-    case TagType.LANG:
-      return logoLang;
-    case TagType.ETC:
-      return logoEtc;
-    case TagType.PROJECT:
-      return logoProject;
-    default:
-      return logoEtc;
-  }
 };
 
 export function PostCard({ post, isLarge = false }: PostCardProps) {
@@ -77,6 +23,28 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
   const datetime = format(date, 'yyyy-MM-dd');
   // 20 AUG 2018
   const displayDatetime = format(date, 'yyyy LLL dd');
+
+  const data = useStaticQuery(graphql`
+    query {
+      images: allFile(filter: { sourceInstanceName: { eq: "assets" } }) {
+        edges {
+          node {
+            relativePath
+            childImageSharp {
+              gatsbyImageData(formats: [AUTO, WEBP, AVIF])
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const {
+    node: { childImageSharp },
+  } =
+    data.images.edges.find(
+      ({ node }: { node: any }) => `logo-${post.frontmatter.tags[0]}.png` === node.relativePath,
+    ) ?? data.images.edges.find(({ node }: { node: any }) => node.relativePath === 'logo-etc.png');
 
   return (
     <article
@@ -95,7 +63,10 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
                   css={PostCardImageLink}
                   to={post.fields.slug}
                 >
-                  <img src={getTagLogo(post.frontmatter.tags[0])} alt={post.frontmatter.tags[0]} />
+                  <GatsbyImage
+                    image={childImageSharp.gatsbyImageData}
+                    alt={post.frontmatter.tags[0]}
+                  />
                 </Link>
               </TaggedImageContainer>
               <PrimaryTitleContainer>

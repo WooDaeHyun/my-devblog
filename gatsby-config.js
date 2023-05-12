@@ -7,15 +7,17 @@ module.exports = {
     description: "it's my development blog to record",
     siteUrl: 'https://woodaelog.com', // full path to blog - no ending slash
   },
-  // mapping: {
-  //   'MarkdownRemark.frontmatter.author': 'AuthorYaml.name',
-  // },
   plugins: [
     'gatsby-plugin-sitemap',
     'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
+        defaults: {
+          formats: ['auto', 'avif', 'webp'],
+          quality: 100,
+          placeholder: 'blurred',
+        },
         defaultQuality: 100,
         stripMetadata: true,
       },
@@ -25,6 +27,13 @@ module.exports = {
       options: {
         name: 'content',
         path: path.join(__dirname, 'src', 'content'),
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'assets',
+        path: path.join(__dirname, 'src', 'assets'),
       },
     },
     {
