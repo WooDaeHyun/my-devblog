@@ -5,13 +5,11 @@ import { lighten } from 'polished';
 import React from 'react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-
 import { colors } from '../styles/colors';
 import type { PageContext } from '../templates/post';
 import config from '../website-config';
-
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { GatsbyImageProps } from 'gatsby-plugin-image';
+
 export type PostCardProps = {
   post: PageContext;
   isLarge?: boolean;
