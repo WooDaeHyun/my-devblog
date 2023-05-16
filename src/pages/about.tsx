@@ -73,7 +73,6 @@ function About() {
                       </ul>
                     </div>
                   </MyInfo>
-                  <br />
                   <hr />
                   <FirstQuestion>
                     <h3>WHY DEV?</h3>
