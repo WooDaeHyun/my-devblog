@@ -120,6 +120,16 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 </Link>
               </li>
               <li role="menuitem">
+                <Link to="/tags/typescript/" activeClassName="nav-current">
+                  Typescript
+                </Link>
+              </li>
+              <li role="menuitem">
+                <Link to="/tags/html/" activeClassName="nav-current">
+                  HTML
+                </Link>
+              </li>
+              <li role="menuitem">
                 <Link to="/tags/css/" activeClassName="nav-current">
                   CSS
                 </Link>
@@ -130,15 +140,10 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 </Link>
               </li>
               {/* <li role="menuitem">
-                <Link to="/tags/typescript/" activeClassName="nav-current">
-                  Typescript
-                </Link>
-              </li> */}
-              <li role="menuitem">
                 <Link to="/tags/algorithm/" activeClassName="nav-current">
                   Algorithm
                 </Link>
-              </li>
+              </li> */}
               <li role="menuitem">
                 <Link to="/tags/cs/" activeClassName="nav-current">
                   CS
