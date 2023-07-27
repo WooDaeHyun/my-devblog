@@ -61,15 +61,18 @@ function About() {
                 <div className="post-content">
                   <MyInfo>
                     <div className="myInfoWrapper">
-                      <div className="myInfoTitle">☎️ CONTACT</div>
+                      <div className="myInfoTitle">MY CHANNEL</div>
                       <ul className="myInfoContent">
+                        <li>
+                          <a href="https://woodaefolio.com">Web portfolio</a>
+                        </li>
+                        <li>
+                          <a href="https://github.com/WooDaeHyun">Github repo</a>
+                        </li>
+                        <li>
+                          <a href="https://pinetree93.tistory.com">Tistory blog</a>
+                        </li>
                         <li>po668312@naver.com</li>
-                        <li>
-                          <a href="https://github.com/WooDaeHyun">Github Repo</a>
-                        </li>
-                        <li>
-                          <a href="https://pinetree93.tistory.com">Tistory Dev Blog</a>
-                        </li>
                       </ul>
                     </div>
                   </MyInfo>
